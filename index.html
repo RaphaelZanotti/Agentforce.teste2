@@ -39,5 +39,40 @@
     // Ajuste simples: coloca o ano atual no rodapé
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+ 
+			embeddedservice_bootstrap.init(
+				'00DDn00000DG8GC',
+				'Agentforce_Channel_RD_Station',
+				'https://sysmaporg3000xyz.my.site.com/ESWAgentforceChannelRD1739969482560',
+				{
+					scrt2URL: 'https://sysmaporg3000xyz.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type="text/javascript">
+  var acc = document.getElementsByClassName("accordion");
+var i;
+ 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+<script type='text/javascript' src='https://sysmaporg3000xyz.my.site.com/ESWAgentforceChannelRD1739969482560/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
