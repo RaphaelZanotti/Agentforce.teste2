@@ -39,24 +39,24 @@
     // Ajuste simples: coloca o ano atual no rodapé
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-    <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+   <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
 
-                embeddedservice_bootstrap.init(
-                    '00D88000004lE8U',
-                    'Teste_Github_2',
-                    'https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.site.com/ESWTesteGithub21758922157688',
-                    {
-                        scrt2URL: 'https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type='text/javascript' src='https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.site.com/ESWTesteGithub21758922157688/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+			embeddedservice_bootstrap.init(
+				'00D88000004lE8U',
+				'Teste_LP_2_mesmo_Agent',
+				'https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.site.com/ESWTesteLP2mesmoAgent1758923158676',
+				{
+					scrt2URL: 'https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://sysmaporg3000xyz--sysmapdsb1.sandbox.my.site.com/ESWTesteLP2mesmoAgent1758923158676/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
